@@ -25,4 +25,4 @@
 <br>
 
 ## Arquitetura de pastas da solução
-(arquitetura)
+![Estrutura_Mobile](https://github.com/user-attachments/assets/14a144c4-39a5-4854-be42-57013af29cce)
