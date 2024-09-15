@@ -1,11 +1,535 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    tools:context=".Casual">
+    android:background="#FFFFFF"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Casual">
+
+
+        <View
+            android:id="@+id/view27"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view26"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageView35"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView37"
+            app:layout_constraintStart_toStartOf="@+id/view27"
+            app:layout_constraintTop_toTopOf="@+id/view27"
+            app:srcCompat="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/imageView36"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/view27"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toEndOf="@+id/imageView37"
+            app:layout_constraintTop_toTopOf="@+id/view27"
+            app:srcCompat="@drawable/github" />
+
+        <ImageView
+            android:id="@+id/imageView37"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView37"
+            app:srcCompat="@drawable/instagram" />
+
+        <View
+            android:id="@+id/view25"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/green"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view23" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="-2dp"
+            android:text="R$ 304,97"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/imageView38"
+            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="93dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="@color/beige"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Adicionar"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view25"
+            app:layout_constraintEnd_toStartOf="@+id/button11"
+            app:layout_constraintStart_toEndOf="@+id/imageView38" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="93dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="@color/beige"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Ver mais"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view25"
+            app:layout_constraintEnd_toEndOf="@+id/view25" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Tênis 4"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView38"
+            app:layout_constraintTop_toTopOf="@+id/view25" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:text="R$ 329,99"
+            android:textColor="@color/originalPrice"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView38"
+            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+        <View
+            android:id="@+id/view23"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/green"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view21" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Tênis 3"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView33"
+            app:layout_constraintTop_toTopOf="@+id/view23" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="-2dp"
+            android:text="R$ 89,99"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/imageView33"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="93dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="@color/beige"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Adicionar"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view23"
+            app:layout_constraintEnd_toStartOf="@+id/button9"
+            app:layout_constraintStart_toEndOf="@+id/imageView33" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="93dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="@color/beige"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Ver mais"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view23"
+            app:layout_constraintEnd_toEndOf="@+id/view23" />
+
+        <ImageView
+            android:id="@+id/imageView33"
+            android:layout_width="86dp"
+            android:layout_height="88dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view23"
+            app:layout_constraintStart_toStartOf="@+id/view23"
+            app:layout_constraintTop_toTopOf="@+id/view23"
+            app:srcCompat="@drawable/casual3" />
+
+        <View
+            android:id="@+id/view21"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/green"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view19" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Tênis 2"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView32"
+            app:layout_constraintTop_toTopOf="@+id/view21" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="-2dp"
+            android:text="R$ 269,58"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/imageView32"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="93dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="@color/beige"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Adicionar"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view21"
+            app:layout_constraintEnd_toStartOf="@+id/button7"
+            app:layout_constraintStart_toEndOf="@+id/imageView32" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="93dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="@color/beige"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Ver mais"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view21"
+            app:layout_constraintEnd_toEndOf="@+id/view21" />
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="86dp"
+            android:layout_height="88dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view21"
+            app:layout_constraintStart_toStartOf="@+id/view21"
+            app:layout_constraintTop_toTopOf="@+id/view21"
+            app:srcCompat="@drawable/casual2" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:text="R$ 279,99"
+            android:textColor="@color/originalPrice"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView32"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <View
+            android:id="@+id/view18"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+
+            android:layout_marginTop="32dp"
+            android:background="@drawable/border_right"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view17" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tênis Casual"
+            app:layout_constraintBottom_toBottomOf="@+id/view18"
+            app:layout_constraintEnd_toEndOf="@+id/view18"
+            app:layout_constraintStart_toStartOf="@+id/view18"
+            app:layout_constraintTop_toTopOf="@+id/view18" />
+
+        <View
+            android:id="@+id/view17"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/beige"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view16" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sobre a SavvyFix"
+            app:layout_constraintBottom_toBottomOf="@+id/view17"
+            app:layout_constraintEnd_toEndOf="@+id/view17"
+            app:layout_constraintStart_toStartOf="@+id/view17"
+            app:layout_constraintTop_toTopOf="@+id/view17" />
+
+        <View
+            android:id="@+id/view16"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:background="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/savvyfix4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view16"
+            app:layout_constraintStart_toStartOf="@+id/view16"
+            app:layout_constraintTop_toTopOf="@+id/view16"
+            app:srcCompat="@drawable/savvyfix" />
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view16"
+            app:layout_constraintEnd_toEndOf="@+id/view16"
+            app:layout_constraintTop_toTopOf="@+id/view16"
+            app:srcCompat="@drawable/team" />
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view16"
+            app:layout_constraintEnd_toStartOf="@+id/imageView28"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/car" />
+
+        <ImageView
+            android:id="@+id/imageView30"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="65dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view16"
+            app:layout_constraintStart_toEndOf="@+id/savvyfix4"
+            app:layout_constraintTop_toTopOf="@+id/view16"
+            app:srcCompat="@drawable/home" />
+
+        <View
+            android:id="@+id/view19"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/green"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view18" />
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="86dp"
+            android:layout_height="88dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view19"
+            app:layout_constraintStart_toStartOf="@+id/view19"
+            app:layout_constraintTop_toTopOf="@+id/view19"
+            app:srcCompat="@drawable/casual1" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Tênis 1"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView31"
+            app:layout_constraintTop_toTopOf="@+id/view19" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="-2dp"
+            android:text="R$ 199,99"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/imageView31"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="93dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="@color/beige"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Adicionar"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view19"
+            app:layout_constraintEnd_toStartOf="@+id/button5"
+            app:layout_constraintStart_toEndOf="@+id/imageView31" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="93dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="@color/beige"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Ver mais"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view19"
+            app:layout_constraintEnd_toEndOf="@+id/view19" />
+
+        <View
+            android:id="@+id/view26"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/border_left"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view25" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="2TDSPF"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view27" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            app:layout_constraintBottom_toBottomOf="@+id/view26"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/view26"
+            app:layout_constraintTop_toTopOf="@+id/view26" />
+
+        <ImageView
+            android:id="@+id/imageView38"
+            android:layout_width="88dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view25"
+            app:layout_constraintStart_toStartOf="@+id/view25"
+            app:layout_constraintTop_toTopOf="@+id/view25"
+            app:srcCompat="@drawable/casual4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

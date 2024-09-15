@@ -8,4 +8,6 @@
     <color name="container">#D9D9D9</color>
     <color name="signupButton">#98DA9E</color>
     <color name="grey2">#D9D9D9</color>
+    <color name="originalPrice">#FFD700</color>
+
 </resources>
