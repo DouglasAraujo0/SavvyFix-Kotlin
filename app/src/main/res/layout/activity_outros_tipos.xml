@@ -13,7 +13,7 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".Esportivo">
+        tools:context=".OutrosTipos">
 
         <View
             android:id="@+id/view15"
@@ -411,7 +411,7 @@
 
         <View
             android:id="@+id/view12"
-            android:layout_width="120dp"
+            android:layout_width="110dp"
             android:layout_height="40dp"
 
             android:layout_marginTop="32dp"
@@ -423,7 +423,7 @@
             android:id="@+id/textView44"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tênis Esportivo"
+            android:text="Outros Tipos"
             app:layout_constraintBottom_toBottomOf="@+id/view12"
             app:layout_constraintEnd_toEndOf="@+id/view12"
             app:layout_constraintStart_toStartOf="@+id/view12"
@@ -484,7 +484,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/view28"
             app:layout_constraintStart_toStartOf="@+id/view28"
             app:layout_constraintTop_toTopOf="@+id/view28"
-            app:srcCompat="@drawable/esportivo1" />
+            app:srcCompat="@drawable/outros1" />
 
         <TextView
             android:id="@+id/textView53"
@@ -528,7 +528,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/view29"
             app:layout_constraintStart_toStartOf="@+id/view29"
             app:layout_constraintTop_toTopOf="@+id/view29"
-            app:srcCompat="@drawable/esportivo2" />
+            app:srcCompat="@drawable/outros2" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -538,7 +538,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/view4"
             app:layout_constraintStart_toStartOf="@+id/view4"
             app:layout_constraintTop_toTopOf="@+id/view4"
-            app:srcCompat="@drawable/esportivo3" />
+            app:srcCompat="@drawable/outros3" />
 
         <ImageView
             android:id="@+id/imageView40"
@@ -548,7 +548,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/view6"
             app:layout_constraintStart_toStartOf="@+id/view6"
             app:layout_constraintTop_toTopOf="@+id/view6"
-            app:srcCompat="@drawable/esportivo4" />
+            app:srcCompat="@drawable/outros4" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
