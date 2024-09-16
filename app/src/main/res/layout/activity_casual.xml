@@ -27,7 +27,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view26"
+            app:layout_constraintTop_toBottomOf="@+id/viewHomeCasual"
             app:layout_constraintVertical_bias="1.0" />
 
         <ImageView
@@ -37,6 +37,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="36dp"
             android:layout_marginBottom="16dp"
+            android:contentDescription="@string/todo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageView37"
             app:layout_constraintStart_toStartOf="@+id/view27"
@@ -50,6 +51,7 @@
             android:layout_marginTop="35dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="16dp"
+            android:contentDescription="@string/todo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/view27"
             app:layout_constraintHorizontal_bias="0.493"
@@ -63,6 +65,7 @@
             android:layout_height="40dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="16dp"
+            android:contentDescription="@string/todo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -84,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="-2dp"
-            android:text="R$ 304,97"
+            android:text="@string/r_304_97"
             android:textColor="@color/white"
             app:layout_constraintStart_toEndOf="@+id/imageView38"
             app:layout_constraintTop_toBottomOf="@+id/textView32" />
@@ -100,14 +103,15 @@
             android:gravity="center"
             android:maxLines="1"
             android:singleLine="true"
-            android:text="Adicionar"
+            android:text="@string/adicionar"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="10dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/view25"
             app:layout_constraintEnd_toStartOf="@+id/button11"
-            app:layout_constraintStart_toEndOf="@+id/imageView38" />
+            app:layout_constraintStart_toEndOf="@+id/imageView38"
+            tools:ignore="SpUsage" />
 
         <Button
             android:id="@+id/button11"
@@ -119,13 +123,14 @@
             android:gravity="center"
             android:maxLines="1"
             android:singleLine="true"
-            android:text="Ver mais"
+            android:text="@string/ver_mais"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="10dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/view25"
-            app:layout_constraintEnd_toEndOf="@+id/view25" />
+            app:layout_constraintEnd_toEndOf="@+id/view25"
+            tools:ignore="SpUsage" />
 
         <TextView
             android:id="@+id/textView32"
@@ -133,7 +138,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="4dp"
-            android:text="Tênis 4"
+            android:text="@string/t_nis_4"
             android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintStart_toEndOf="@+id/imageView38"
@@ -144,11 +149,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="55dp"
-            android:text="R$ 329,99"
+            android:text="@string/r_329_99"
             android:textColor="@color/originalPrice"
-            android:textSize="10sp"
+            android:textSize="10dp"
             app:layout_constraintStart_toEndOf="@+id/imageView38"
-            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+            app:layout_constraintTop_toBottomOf="@+id/textView31"
+            tools:ignore="SpUsage" />
 
         <View
             android:id="@+id/view23"
@@ -165,7 +171,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="4dp"
-            android:text="Tênis 3"
+            android:text="@string/t_nis_3"
             android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintStart_toEndOf="@+id/imageView33"
@@ -177,7 +183,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="-2dp"
-            android:text="R$ 89,99"
+            android:text="@string/r_89_99"
             android:textColor="@color/white"
             app:layout_constraintStart_toEndOf="@+id/imageView33"
             app:layout_constraintTop_toBottomOf="@+id/textView16" />
@@ -193,14 +199,15 @@
             android:gravity="center"
             android:maxLines="1"
             android:singleLine="true"
-            android:text="Adicionar"
+            android:text="@string/adicionar"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="10dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/view23"
             app:layout_constraintEnd_toStartOf="@+id/button9"
-            app:layout_constraintStart_toEndOf="@+id/imageView33" />
+            app:layout_constraintStart_toEndOf="@+id/imageView33"
+            tools:ignore="SpUsage" />
 
         <Button
             android:id="@+id/button9"
@@ -212,19 +219,21 @@
             android:gravity="center"
             android:maxLines="1"
             android:singleLine="true"
-            android:text="Ver mais"
+            android:text="@string/ver_mais"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="10dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/view23"
-            app:layout_constraintEnd_toEndOf="@+id/view23" />
+            app:layout_constraintEnd_toEndOf="@+id/view23"
+            tools:ignore="SpUsage" />
 
         <ImageView
             android:id="@+id/imageView33"
             android:layout_width="86dp"
             android:layout_height="88dp"
             android:layout_marginStart="8dp"
+            android:contentDescription="@string/todo"
             app:layout_constraintBottom_toBottomOf="@+id/view23"
             app:layout_constraintStart_toStartOf="@+id/view23"
             app:layout_constraintTop_toTopOf="@+id/view23"
@@ -245,7 +254,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="4dp"
-            android:text="Tênis 2"
+            android:text="@string/t_nis_2"
             android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintStart_toEndOf="@+id/imageView32"
@@ -257,7 +266,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="-2dp"
-            android:text="R$ 269,58"
+            android:text="@string/r_269_58"
             android:textColor="@color/white"
             app:layout_constraintStart_toEndOf="@+id/imageView32"
             app:layout_constraintTop_toBottomOf="@+id/textView13" />
@@ -273,14 +282,15 @@
             android:gravity="center"
             android:maxLines="1"
             android:singleLine="true"
-            android:text="Adicionar"
+            android:text="@string/adicionar"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="10dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/view21"
             app:layout_constraintEnd_toStartOf="@+id/button7"
-            app:layout_constraintStart_toEndOf="@+id/imageView32" />
+            app:layout_constraintStart_toEndOf="@+id/imageView32"
+            tools:ignore="SpUsage" />
 
         <Button
             android:id="@+id/button7"
@@ -292,19 +302,21 @@
             android:gravity="center"
             android:maxLines="1"
             android:singleLine="true"
-            android:text="Ver mais"
+            android:text="@string/ver_mais"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="10dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/view21"
-            app:layout_constraintEnd_toEndOf="@+id/view21" />
+            app:layout_constraintEnd_toEndOf="@+id/view21"
+            tools:ignore="SpUsage" />
 
         <ImageView
             android:id="@+id/imageView32"
             android:layout_width="86dp"
             android:layout_height="88dp"
             android:layout_marginStart="8dp"
+            android:contentDescription="@string/todo"
             app:layout_constraintBottom_toBottomOf="@+id/view21"
             app:layout_constraintStart_toStartOf="@+id/view21"
             app:layout_constraintTop_toTopOf="@+id/view21"
@@ -315,11 +327,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="55dp"
-            android:text="R$ 279,99"
+            android:text="@string/r_279_99"
             android:textColor="@color/originalPrice"
             android:textSize="10sp"
             app:layout_constraintStart_toEndOf="@+id/imageView32"
-            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            tools:ignore="SmallSp" />
 
         <View
             android:id="@+id/view18"
@@ -329,20 +342,20 @@
             android:layout_marginTop="32dp"
             android:background="@drawable/border_right"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view17" />
+            app:layout_constraintTop_toBottomOf="@+id/viewSobreSavvyCasual" />
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tênis Casual"
+            android:text="@string/t_nis_casual"
             app:layout_constraintBottom_toBottomOf="@+id/view18"
             app:layout_constraintEnd_toEndOf="@+id/view18"
             app:layout_constraintStart_toStartOf="@+id/view18"
             app:layout_constraintTop_toTopOf="@+id/view18" />
 
         <View
-            android:id="@+id/view17"
+            android:id="@+id/viewSobreSavvyCasual"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:layout_marginTop="24dp"
@@ -352,14 +365,16 @@
             app:layout_constraintTop_toBottomOf="@+id/view16" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/sobreSavvyCasual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sobre a SavvyFix"
-            app:layout_constraintBottom_toBottomOf="@+id/view17"
-            app:layout_constraintEnd_toEndOf="@+id/view17"
-            app:layout_constraintStart_toStartOf="@+id/view17"
-            app:layout_constraintTop_toTopOf="@+id/view17" />
+            android:focusable="true"
+            android:text="@string/sobre_a_savvyfix"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="@+id/viewSobreSavvyCasual"
+            app:layout_constraintEnd_toEndOf="@+id/viewSobreSavvyCasual"
+            app:layout_constraintStart_toStartOf="@+id/viewSobreSavvyCasual"
+            app:layout_constraintTop_toTopOf="@+id/viewSobreSavvyCasual" />
 
         <View
             android:id="@+id/view16"
@@ -373,43 +388,40 @@
 
         <ImageView
             android:id="@+id/savvyfix4"
-            android:layout_width="70dp"
+            android:layout_width="55dp"
             android:layout_height="70dp"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="50dp"
+            android:contentDescription="@string/todo"
             app:layout_constraintBottom_toBottomOf="@+id/view16"
             app:layout_constraintStart_toStartOf="@+id/view16"
             app:layout_constraintTop_toTopOf="@+id/view16"
             app:srcCompat="@drawable/savvyfix" />
 
         <ImageView
-            android:id="@+id/imageView28"
-            android:layout_width="65dp"
+            android:id="@+id/iconLoginCasual"
+            android:layout_width="55dp"
             android:layout_height="65dp"
             android:layout_marginEnd="24dp"
+            android:clickable="true"
+            android:contentDescription="@string/todo"
+            android:focusable="true"
             app:layout_constraintBottom_toBottomOf="@+id/view16"
             app:layout_constraintEnd_toEndOf="@+id/view16"
             app:layout_constraintTop_toTopOf="@+id/view16"
             app:srcCompat="@drawable/team" />
 
         <ImageView
-            android:id="@+id/imageView29"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginEnd="20dp"
+            android:id="@+id/iconCarrinhoCasual"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="24dp"
+            android:clickable="true"
+            android:contentDescription="@string/todo"
+            android:focusable="true"
             app:layout_constraintBottom_toBottomOf="@+id/view16"
-            app:layout_constraintEnd_toStartOf="@+id/imageView28"
+            app:layout_constraintEnd_toStartOf="@+id/iconLoginCasual"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/car" />
-
-        <ImageView
-            android:id="@+id/imageView30"
-            android:layout_width="65dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="65dp"
-            app:layout_constraintBottom_toBottomOf="@+id/view16"
-            app:layout_constraintStart_toEndOf="@+id/savvyfix4"
-            app:layout_constraintTop_toTopOf="@+id/view16"
-            app:srcCompat="@drawable/home" />
 
         <View
             android:id="@+id/view19"
@@ -425,6 +437,7 @@
             android:layout_width="86dp"
             android:layout_height="88dp"
             android:layout_marginStart="8dp"
+            android:contentDescription="@string/todo"
             app:layout_constraintBottom_toBottomOf="@+id/view19"
             app:layout_constraintStart_toStartOf="@+id/view19"
             app:layout_constraintTop_toTopOf="@+id/view19"
@@ -436,7 +449,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="4dp"
-            android:text="Tênis 1"
+            android:text="@string/t_nis_1"
             android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintStart_toEndOf="@+id/imageView31"
@@ -448,7 +461,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="-2dp"
-            android:text="R$ 199,99"
+            android:text="@string/r_199_99"
             android:textColor="@color/white"
             app:layout_constraintStart_toEndOf="@+id/imageView31"
             app:layout_constraintTop_toBottomOf="@+id/textView11" />
@@ -464,14 +477,15 @@
             android:gravity="center"
             android:maxLines="1"
             android:singleLine="true"
-            android:text="Adicionar"
+            android:text="@string/adicionar"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="10dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/view19"
             app:layout_constraintEnd_toStartOf="@+id/button5"
-            app:layout_constraintStart_toEndOf="@+id/imageView31" />
+            app:layout_constraintStart_toEndOf="@+id/imageView31"
+            tools:ignore="SmallSp,SpUsage" />
 
         <Button
             android:id="@+id/button5"
@@ -483,20 +497,23 @@
             android:gravity="center"
             android:maxLines="1"
             android:singleLine="true"
-            android:text="Ver mais"
+            android:text="@string/ver_mais"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="10dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/view19"
-            app:layout_constraintEnd_toEndOf="@+id/view19" />
+            app:layout_constraintEnd_toEndOf="@+id/view19"
+            tools:ignore="SpUsage" />
 
         <View
-            android:id="@+id/view26"
+            android:id="@+id/viewHomeCasual"
             android:layout_width="110dp"
             android:layout_height="40dp"
             android:layout_marginTop="40dp"
+            android:clickable="true"
             android:background="@drawable/border_left"
+            android:focusable="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view25" />
 
@@ -505,31 +522,45 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="2TDSPF"
+            android:text="@string/_2tdspf"
             android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/view27" />
 
         <TextView
-            android:id="@+id/textView38"
+            android:id="@+id/textHomeCasual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Home"
-            app:layout_constraintBottom_toBottomOf="@+id/view26"
+            android:text="@string/home"
+            app:layout_constraintBottom_toBottomOf="@+id/viewHomeCasual"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/view26"
-            app:layout_constraintTop_toTopOf="@+id/view26" />
+            app:layout_constraintStart_toStartOf="@+id/viewHomeCasual"
+            app:layout_constraintTop_toTopOf="@+id/viewHomeCasual" />
 
         <ImageView
             android:id="@+id/imageView38"
             android:layout_width="88dp"
             android:layout_height="86dp"
             android:layout_marginStart="8dp"
+            android:contentDescription="@string/todo"
             app:layout_constraintBottom_toBottomOf="@+id/view25"
             app:layout_constraintStart_toStartOf="@+id/view25"
             app:layout_constraintTop_toTopOf="@+id/view25"
             app:srcCompat="@drawable/casual4" />
+
+        <ImageView
+            android:id="@+id/iconHomeCasual"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="24dp"
+            android:clickable="true"
+            android:contentDescription="@string/todo"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="@+id/view16"
+            app:layout_constraintEnd_toStartOf="@+id/iconCarrinhoCasual"
+            app:layout_constraintTop_toTopOf="@+id/view16"
+            app:srcCompat="@drawable/baseline_home_24" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

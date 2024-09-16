@@ -14,19 +14,15 @@ class Cadastro : AppCompatActivity() {
         setContentView(R.layout.activity_cadastro)
 
         val btnCadastro: Button = findViewById(R.id.btnCadastro)
-        val entreAquiCadastro : TextView = findViewById(R.id.entreAquiCadastro)
+        val entreAquiCadastro: TextView = findViewById(R.id.entreAquiCadastro)
 
         btnCadastro.setOnClickListener {
-            IrParaHome()
-        }
-
-        entreAquiCadastro.setOnClickListener{
             IrParaLogin()
         }
-    }
-    private fun IrParaHome(){
-        val home = Intent(this, MainActivity::class.java)
-        startActivity(home)
+
+        entreAquiCadastro.setOnClickListener {
+            IrParaLogin()
+        }
     }
 
     private fun IrParaLogin() {

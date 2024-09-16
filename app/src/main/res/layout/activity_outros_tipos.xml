@@ -24,7 +24,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view7" />
+            app:layout_constraintTop_toBottomOf="@+id/viewHomeEsportivo" />
 
         <ImageView
             android:id="@+id/imageView41"
@@ -76,7 +76,7 @@
             app:layout_constraintTop_toTopOf="@+id/view15" />
 
         <View
-            android:id="@+id/view7"
+            android:id="@+id/viewHomeEsportivo"
             android:layout_width="110dp"
             android:layout_height="40dp"
             android:layout_marginTop="40dp"
@@ -85,14 +85,14 @@
             app:layout_constraintTop_toBottomOf="@+id/view6" />
 
         <TextView
-            android:id="@+id/textView42"
+            android:id="@+id/textHomeEsportivo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Home"
-            app:layout_constraintBottom_toBottomOf="@+id/view7"
+            app:layout_constraintBottom_toBottomOf="@+id/viewHomeEsportivo"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/view7"
-            app:layout_constraintTop_toTopOf="@+id/view7" />
+            app:layout_constraintStart_toStartOf="@+id/viewHomeEsportivo"
+            app:layout_constraintTop_toTopOf="@+id/viewHomeEsportivo" />
 
         <View
             android:id="@+id/view6"
@@ -347,7 +347,7 @@
             app:srcCompat="@drawable/savvyfix" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/iconLoginEsportivo"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_marginEnd="24dp"
@@ -357,12 +357,12 @@
             app:srcCompat="@drawable/team" />
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/iconCarrinhoEsportivo"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginEnd="20dp"
             app:layout_constraintBottom_toBottomOf="@+id/view14"
-            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintEnd_toStartOf="@+id/iconLoginEsportivo"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/car" />
 
@@ -379,7 +379,7 @@
             app:srcCompat="@drawable/home" />
 
         <View
-            android:id="@+id/view13"
+            android:id="@+id/viewSobreSavvyEsportivo"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:layout_marginTop="24dp"
@@ -389,14 +389,14 @@
             app:layout_constraintTop_toBottomOf="@+id/view14" />
 
         <TextView
-            android:id="@+id/textView45"
+            android:id="@+id/sobreSavvyEsportivo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sobre a SavvyFix"
-            app:layout_constraintBottom_toBottomOf="@+id/view13"
-            app:layout_constraintEnd_toEndOf="@+id/view13"
-            app:layout_constraintStart_toStartOf="@+id/view13"
-            app:layout_constraintTop_toTopOf="@+id/view13" />
+            app:layout_constraintBottom_toBottomOf="@+id/viewSobreSavvyEsportivo"
+            app:layout_constraintEnd_toEndOf="@+id/viewSobreSavvyEsportivo"
+            app:layout_constraintStart_toStartOf="@+id/viewSobreSavvyEsportivo"
+            app:layout_constraintTop_toTopOf="@+id/viewSobreSavvyEsportivo" />
 
         <View
             android:id="@+id/view12"
@@ -406,7 +406,7 @@
             android:layout_marginTop="32dp"
             android:background="@drawable/border_right"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view13" />
+            app:layout_constraintTop_toBottomOf="@+id/viewSobreSavvyEsportivo" />
 
         <TextView
             android:id="@+id/textView44"

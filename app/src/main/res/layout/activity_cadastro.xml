@@ -33,6 +33,7 @@
             android:layout_height="42dp"
             android:layout_marginTop="33dp"
             android:layout_marginBottom="25dp"
+            android:contentDescription="@string/todo"
             app:layout_constraintBottom_toBottomOf="@+id/view5"
             app:layout_constraintEnd_toEndOf="@+id/view5"
             app:layout_constraintHorizontal_bias="0.758"
@@ -47,6 +48,7 @@
             android:layout_height="50dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="32dp"
+            android:contentDescription="@string/todo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.155"
@@ -60,6 +62,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginTop="8dp"
+            android:contentDescription="@string/todo"
             app:layout_constraintEnd_toStartOf="@+id/imageView12"
             app:layout_constraintHorizontal_bias="0.485"
             app:layout_constraintStart_toEndOf="@+id/imageView13"
@@ -117,7 +120,7 @@
             android:layout_marginBottom="8dp"
             android:background="@drawable/botaoedit"
             android:backgroundTint="@null"
-            android:text="Cadastrar"
+            android:text="@string/cadastrar"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="@+id/view3"
             app:layout_constraintEnd_toEndOf="@+id/view3"
@@ -138,7 +141,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nome Completo"
+                android:hint="@string/nome_completo"
                 android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -157,7 +160,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="CPF"
+                android:hint="@string/cpf"
                 android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -174,7 +177,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Senha" />
+                android:hint="@string/senha" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -192,7 +195,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="CEP"
+                android:hint="@string/cep"
                 android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -209,7 +212,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Rua"
+                android:hint="@string/rua"
                 android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -226,7 +229,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Número"
+                android:hint="@string/n_mero"
                 android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -242,7 +245,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Bairro"
+                android:hint="@string/bairro"
                 android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -258,7 +261,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Cidade"
+                android:hint="@string/cidade"
                 android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -274,7 +277,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Estado"
+                android:hint="@string/estado"
                 android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -290,7 +293,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="País"
+                android:hint="@string/pa_s"
                 android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -300,7 +303,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="16dp"
-            android:text="Entre aqui"
+            android:focusable="true"
+            android:text="@string/entre_aqui"
             android:clickable="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.841"
@@ -312,7 +316,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="2TDSPF"
+            android:text="@string/_2tdspf"
             android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.501"
@@ -323,6 +327,7 @@
             android:id="@+id/imageView4"
             android:layout_width="70dp"
             android:layout_height="70dp"
+            android:contentDescription="@string/todo"
             app:layout_constraintBottom_toBottomOf="@+id/view"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
