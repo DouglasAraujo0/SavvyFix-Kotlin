@@ -109,21 +109,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="-2dp"
-            android:text="R$ 499,78"
+            android:text="R$ 269,90"
             android:textColor="@color/white"
             app:layout_constraintStart_toEndOf="@+id/imageView40"
             app:layout_constraintTop_toBottomOf="@+id/textView39" />
-
-        <TextView
-            android:id="@+id/textView41"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="55dp"
-            android:text="R$ 549,99"
-            android:textColor="@color/originalPrice"
-            android:textSize="10sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView40"
-            app:layout_constraintTop_toBottomOf="@+id/textView40" />
 
         <Button
             android:id="@+id/button14"
@@ -202,7 +191,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="-2dp"
-            android:text="R$ 499,78"
+            android:text="R$ 458,97"
             android:textColor="@color/white"
             app:layout_constraintStart_toEndOf="@+id/imageView3"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -212,7 +201,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="55dp"
-            android:text="R$ 549,99"
+            android:text="R$ 459,99"
             android:textColor="@color/originalPrice"
             android:textSize="10sp"
             app:layout_constraintStart_toEndOf="@+id/imageView3"
@@ -303,7 +292,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="-2dp"
-            android:text="R$ 499,78"
+            android:text="R$ 467,54"
             android:textColor="@color/white"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toBottomOf="@+id/textView58" />
@@ -313,7 +302,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="55dp"
-            android:text="R$ 549,99"
+            android:text="R$ 469,99"
             android:textColor="@color/originalPrice"
             android:textSize="10sp"
             app:layout_constraintStart_toEndOf="@+id/imageView"
@@ -504,21 +493,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="-2dp"
-            android:text="R$ 499,78"
+            android:text="R$ 303,99"
             android:textColor="@color/white"
             app:layout_constraintStart_toEndOf="@+id/imageView34"
             app:layout_constraintTop_toBottomOf="@+id/textView53" />
-
-        <TextView
-            android:id="@+id/textView57"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="55dp"
-            android:text="R$ 549,99"
-            android:textColor="@color/originalPrice"
-            android:textSize="10sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView34"
-            app:layout_constraintTop_toBottomOf="@+id/textView54" />
 
         <ImageView
             android:id="@+id/imageView"
