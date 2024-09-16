@@ -106,7 +106,7 @@
             android:text="@string/adicionar"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="10dp"
+            android:textSize="9dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/view25"
             app:layout_constraintEnd_toStartOf="@+id/button11"
@@ -202,7 +202,7 @@
             android:text="@string/adicionar"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="10dp"
+            android:textSize="9dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/view23"
             app:layout_constraintEnd_toStartOf="@+id/button9"
@@ -285,7 +285,7 @@
             android:text="@string/adicionar"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="10dp"
+            android:textSize="9dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/view21"
             app:layout_constraintEnd_toStartOf="@+id/button7"
@@ -480,12 +480,12 @@
             android:text="@string/adicionar"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="10dp"
+            android:textSize="9dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/view19"
             app:layout_constraintEnd_toStartOf="@+id/button5"
             app:layout_constraintStart_toEndOf="@+id/imageView31"
-            tools:ignore="SmallSp,SpUsage" />
+            tools:ignore="SmallSp" />
 
         <Button
             android:id="@+id/button5"

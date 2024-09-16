@@ -34,34 +34,38 @@
         android:id="@+id/imageView47"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/view33"
+        app:layout_constraintBottom_toBottomOf="@+id/view33"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView48"
-        app:layout_constraintTop_toTopOf="@+id/textView52"
+        app:layout_constraintTop_toTopOf="@+id/view33"
         app:srcCompat="@drawable/github" />
 
     <ImageView
         android:id="@+id/imageView48"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/view33"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/view33"
         app:layout_constraintTop_toBottomOf="@+id/textView52"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/instagram" />
 
     <TextView
         android:id="@+id/textView52"
-        android:layout_width="48dp"
-        android:layout_height="19dp"
-        android:text="2TDSPF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/_2tdspf"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/view33"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view33" />
 
     <View
-        android:id="@+id/view31"
+        android:id="@+id/viewHomeCarrinho"
         android:layout_width="110dp"
         android:layout_height="40dp"
         android:layout_marginTop="40dp"
@@ -70,38 +74,68 @@
         app:layout_constraintTop_toBottomOf="@+id/view20" />
 
     <TextView
-        android:id="@+id/textView51"
+        android:id="@+id/textHomeCarrinho"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Home"
-        app:layout_constraintBottom_toBottomOf="@+id/view31"
-        app:layout_constraintEnd_toEndOf="@+id/view31"
-        app:layout_constraintStart_toStartOf="@+id/view31"
-        app:layout_constraintTop_toTopOf="@+id/view31" />
+        app:layout_constraintBottom_toBottomOf="@+id/viewHomeCarrinho"
+        app:layout_constraintEnd_toEndOf="@+id/viewHomeCarrinho"
+        app:layout_constraintStart_toStartOf="@+id/viewHomeCarrinho"
+        app:layout_constraintTop_toTopOf="@+id/viewHomeCarrinho" />
 
     <View
         android:id="@+id/view20"
         android:layout_width="400dp"
         android:layout_height="100dp"
+        android:layout_marginTop="32dp"
         android:background="@color/green"
-        tools:layout_editor_absoluteY="243dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewCarrinhoCarrinho" />
 
-    <Button
-        android:id="@+id/button16"
-        android:layout_width="54dp"
-        android:layout_height="33dp"
-        android:backgroundTint="@color/beige"
-        android:gravity="center"
-        android:maxLines="1"
-        android:singleLine="true"
-        android:text="2"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="10dp"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="88dp"
+        android:layout_height="86dp"
         app:layout_constraintBottom_toBottomOf="@+id/view20"
+        app:layout_constraintTop_toTopOf="@+id/view20"
+        app:srcCompat="@drawable/outros1"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Tênis 1"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/view20" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="-2dp"
+        android:text="R$ 303,99"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Total: R$ 607,98"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/view20"
-        app:layout_constraintStart_toEndOf="@+id/button17" />
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toEndOf="@+id/textView46"
+        app:layout_constraintTop_toTopOf="@+id/view20" />
 
     <Button
         android:id="@+id/button18"
@@ -118,12 +152,16 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view20"
         app:layout_constraintEnd_toStartOf="@+id/button17"
-        app:layout_constraintStart_toEndOf="@+id/imageView2" />
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView47"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button17"
         android:layout_width="90dp"
         android:layout_height="33dp"
+        android:layout_marginEnd="100dp"
         android:backgroundTint="@color/beige"
         android:gravity="center"
         android:maxLines="1"
@@ -134,59 +172,49 @@
         android:textSize="10dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view20"
-        tools:layout_editor_absoluteX="197dp" />
+        app:layout_constraintEnd_toEndOf="@+id/view20" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="88dp"
-        android:layout_height="86dp"
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="54dp"
+        android:layout_height="33dp"
+        android:backgroundTint="@color/beige"
+        android:gravity="center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="2"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view20"
-        app:layout_constraintTop_toTopOf="@+id/view20"
-        app:srcCompat="@drawable/outros1"
-        tools:layout_editor_absoluteX="8dp" />
-
-    <TextView
-        android:id="@+id/textView46"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tênis 1"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="@+id/view20" />
-
-    <TextView
-        android:id="@+id/textView47"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="R$ 303,99"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+        app:layout_constraintEnd_toEndOf="@+id/view20"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toEndOf="@+id/button17" />
 
     <View
-        android:id="@+id/view22"
+        android:id="@+id/viewCarrinhoCarrinho"
         android:layout_width="100dp"
         android:layout_height="40dp"
 
         android:layout_marginTop="32dp"
         android:background="@drawable/border_right"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view24" />
+        app:layout_constraintTop_toBottomOf="@+id/viewSobreCarrinho" />
 
     <TextView
-        android:id="@+id/textView48"
-        android:layout_width="82dp"
-        android:layout_height="17dp"
+        android:id="@+id/textCarrinhoCarrinho"
+        android:layout_width="81dp"
+        android:layout_height="18dp"
         android:text="Carrinho"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="@+id/view22"
-        app:layout_constraintEnd_toEndOf="@+id/view22"
-        app:layout_constraintStart_toStartOf="@+id/view22"
-        app:layout_constraintTop_toTopOf="@+id/view22" />
+        app:layout_constraintBottom_toBottomOf="@+id/viewCarrinhoCarrinho"
+        app:layout_constraintEnd_toEndOf="@+id/viewCarrinhoCarrinho"
+        app:layout_constraintStart_toStartOf="@+id/viewCarrinhoCarrinho"
+        app:layout_constraintTop_toTopOf="@+id/viewCarrinhoCarrinho" />
 
     <View
-        android:id="@+id/view24"
+        android:id="@+id/viewSobreCarrinho"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_marginTop="32dp"
@@ -196,14 +224,14 @@
         app:layout_constraintTop_toBottomOf="@+id/view30" />
 
     <TextView
-        android:id="@+id/textView49"
+        android:id="@+id/textSobreCarrinho"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sobre a SavvyFix"
-        app:layout_constraintBottom_toBottomOf="@+id/view24"
+        app:layout_constraintBottom_toBottomOf="@+id/viewSobreCarrinho"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view24" />
+        app:layout_constraintTop_toTopOf="@+id/viewSobreCarrinho" />
 
     <View
         android:id="@+id/view30"
@@ -216,52 +244,41 @@
 
     <ImageView
         android:id="@+id/savvyfix3"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="50dp"
         app:layout_constraintBottom_toBottomOf="@+id/view30"
-        app:layout_constraintEnd_toStartOf="@+id/imageView45"
         app:layout_constraintStart_toStartOf="@+id/view30"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/savvyfix" />
 
     <ImageView
-        android:id="@+id/imageView39"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:id="@+id/iconLoginCarrinho"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="24dp"
         app:layout_constraintBottom_toBottomOf="@+id/view30"
         app:layout_constraintEnd_toEndOf="@+id/view30"
-        app:layout_constraintStart_toEndOf="@+id/imageView44"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/team" />
 
     <ImageView
-        android:id="@+id/imageView44"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:id="@+id/iconCarrinhoCarrinho"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="24dp"
         app:layout_constraintBottom_toBottomOf="@+id/view30"
+        app:layout_constraintEnd_toStartOf="@+id/iconLoginCarrinho"
         app:layout_constraintTop_toTopOf="@+id/view30"
-        app:srcCompat="@drawable/car"
-        tools:layout_editor_absoluteX="271dp" />
+        app:srcCompat="@drawable/car" />
 
     <ImageView
-        android:id="@+id/imageView45"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:id="@+id/iconHomeCarrinho"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="24dp"
         app:layout_constraintBottom_toBottomOf="@+id/view30"
-        app:layout_constraintEnd_toStartOf="@+id/imageView44"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/home" />
-
-    <TextView
-        android:id="@+id/textView50"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Total: R$ 607,98"
-        android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/view20"
-        app:layout_constraintHorizontal_bias="0.851"
-        app:layout_constraintStart_toEndOf="@+id/textView46"
-        app:layout_constraintTop_toTopOf="@+id/view20" />
+        app:layout_constraintEnd_toStartOf="@+id/iconCarrinhoCarrinho"
+        app:layout_constraintTop_toTopOf="@+id/view30"
+        app:srcCompat="@drawable/baseline_home_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>

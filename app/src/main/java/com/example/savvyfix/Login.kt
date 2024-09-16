@@ -6,8 +6,6 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +14,7 @@ class Login : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         val btnLogin: Button = findViewById(R.id.btnLogin)
-        val cadastreseLogin : TextView = findViewById(R.id.cadastreseLogin)
+        val cadastreseLogin: TextView = findViewById(R.id.cadastreseLogin)
 
         btnLogin.setOnClickListener {
             IrParaHome()
@@ -25,13 +23,14 @@ class Login : AppCompatActivity() {
             IrParaCadastro()
         }
     }
-    private fun IrParaHome(){
+
+    private fun IrParaHome() {
         val home = Intent(this, MainActivity::class.java)
         startActivity(home)
     }
-    private fun IrParaCadastro(){
+
+    private fun IrParaCadastro() {
         val cadastro = Intent(this, Cadastro::class.java)
         startActivity(cadastro)
     }
-
 }

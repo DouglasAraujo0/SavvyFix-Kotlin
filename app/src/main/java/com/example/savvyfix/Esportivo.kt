@@ -7,8 +7,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class Esportivo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,13 +14,13 @@ class Esportivo : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_esportivo)
 
-        val iconHomeEsportivo: ImageView = findViewById(R.id.iconHomeEsportivo)
-        val iconCarrinhoEsportivo : ImageView = findViewById(R.id.iconCarrinhoEsportivo)
-        val iconLoginEsportivo : ImageView = findViewById(R.id.iconLoginEsportivo)
-        val sobreSavvyEsportivo : TextView = findViewById(R.id.sobreSavvyEsportivo)
-        val viewSobreSavvyEsportivo : View = findViewById(R.id.viewSobreSavvyEsportivo)
-        val textHomeEsportivo : TextView = findViewById(R.id.textHomeEsportivo)
-        val viewHomeEsportivo : View = findViewById(R.id.viewHomeEsportivo)
+        val iconHomeEsportivo: ImageView = findViewById(R.id.iconHomeOutros)
+        val iconCarrinhoEsportivo : ImageView = findViewById(R.id.iconCarrinhoOutros)
+        val iconLoginEsportivo : ImageView = findViewById(R.id.iconLoginOutros)
+        val sobreSavvyEsportivo : TextView = findViewById(R.id.sobreSavvyOutros)
+        val viewSobreSavvyEsportivo : View = findViewById(R.id.viewSobreSavvyOutros)
+        val textHomeEsportivo : TextView = findViewById(R.id.textHomeOutros)
+        val viewHomeEsportivo : View = findViewById(R.id.viewHomeOutros)
 
         iconHomeEsportivo.setOnClickListener {
             IrParaHome()

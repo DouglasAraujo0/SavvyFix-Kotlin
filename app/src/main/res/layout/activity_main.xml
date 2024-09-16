@@ -93,9 +93,9 @@
             android:id="@+id/sobreSavvyHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="true"
             android:focusable="true"
             android:text="@string/sobre_a_savvyfix"
-            android:clickable="true"
             app:layout_constraintBottom_toBottomOf="@+id/view53"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/view53"
@@ -114,7 +114,7 @@
             android:id="@+id/imageView8"
             android:layout_width="55dp"
             android:layout_height="55dp"
-            android:layout_marginStart="48dp"
+            android:layout_marginStart="50dp"
             android:contentDescription="@string/todo"
             app:layout_constraintBottom_toBottomOf="@+id/view32"
             app:layout_constraintStart_toStartOf="@+id/view32"
@@ -131,7 +131,7 @@
             android:focusable="true"
             app:layout_constraintBottom_toBottomOf="@+id/view32"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view32"
             app:srcCompat="@drawable/team" />
 
         <View
@@ -267,27 +267,26 @@
             android:id="@+id/iconCarrinhoHome"
             android:layout_width="55dp"
             android:layout_height="55dp"
-            android:layout_marginEnd="-45dp"
+            android:layout_marginEnd="24dp"
             android:clickable="true"
             android:contentDescription="@string/todo"
             android:focusable="true"
             app:layout_constraintBottom_toBottomOf="@+id/view32"
-            app:layout_constraintEnd_toEndOf="@+id/iconLoginHome"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/iconLoginHome"
+            app:layout_constraintTop_toTopOf="@+id/view32"
             app:srcCompat="@drawable/car" />
 
         <ImageView
             android:id="@+id/iconHomeHome"
             android:layout_width="55dp"
             android:layout_height="55dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="24dp"
             android:clickable="true"
             android:contentDescription="@string/todo"
             android:focusable="true"
             app:layout_constraintBottom_toBottomOf="@+id/view32"
             app:layout_constraintEnd_toStartOf="@+id/iconCarrinhoHome"
             app:layout_constraintTop_toTopOf="@+id/view32"
-            app:layout_constraintVertical_bias="0.52"
             app:srcCompat="@drawable/baseline_home_24" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
