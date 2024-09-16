@@ -110,7 +110,7 @@
             app:layout_constraintTop_toBottomOf="@+id/view2" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnCadastro"
             android:layout_width="150dp"
             android:layout_height="48dp"
             android:layout_marginTop="8dp"
@@ -209,7 +209,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Rua" />
+                android:hint="Rua"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -241,7 +242,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Bairro" />
+                android:hint="Bairro"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -256,7 +258,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Cidade" />
+                android:hint="Cidade"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -271,7 +274,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Estado" />
+                android:hint="Estado"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -286,16 +290,18 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="País" />
+                android:hint="País"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/entreAquiCadastro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="16dp"
             android:text="Entre aqui"
+            android:clickable="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.841"
             app:layout_constraintStart_toStartOf="parent"
