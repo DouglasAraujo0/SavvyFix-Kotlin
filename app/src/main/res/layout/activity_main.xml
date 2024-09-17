@@ -1,19 +1,293 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:id="@+id/view54"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view46"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView27"
+            app:layout_constraintStart_toStartOf="@+id/view54"
+            app:layout_constraintTop_toTopOf="@+id/view54"
+            app:srcCompat="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView27"
+            app:layout_constraintTop_toTopOf="@+id/view54"
+            app:srcCompat="@drawable/github" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/view54"
+            app:layout_constraintStart_toStartOf="@+id/view54"
+            app:layout_constraintTop_toBottomOf="@+id/textView35"
+            app:srcCompat="@drawable/instagram" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/_2tdspf"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/view54"
+            app:layout_constraintStart_toStartOf="@+id/view54"
+            app:layout_constraintTop_toTopOf="@+id/view54" />
+
+        <View
+            android:id="@+id/view53"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/beige"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view32" />
+
+        <TextView
+            android:id="@+id/sobreSavvyHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/sobre_a_savvyfix"
+            app:layout_constraintBottom_toBottomOf="@+id/view53"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/view53"
+            app:layout_constraintTop_toTopOf="@+id/view53" />
+
+        <View
+            android:id="@+id/view32"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:background="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="50dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="@+id/view32"
+            app:layout_constraintStart_toStartOf="@+id/view32"
+            app:layout_constraintTop_toTopOf="@+id/view32"
+            app:srcCompat="@drawable/savvyfix" />
+
+        <ImageView
+            android:id="@+id/iconLoginHome"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="24dp"
+            android:clickable="true"
+            android:contentDescription="@string/todo"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="@+id/view32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view32"
+            app:srcCompat="@drawable/team" />
+
+        <View
+            android:id="@+id/view41"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view53" />
+
+        <View
+            android:id="@+id/view40"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@color/beige"
+            app:layout_constraintBottom_toBottomOf="@+id/view41"
+            app:layout_constraintEnd_toEndOf="@+id/view41"
+            app:layout_constraintStart_toStartOf="@+id/view41" />
+
+        <ImageView
+            android:id="@+id/tenisCasual1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:clickable="true"
+            android:contentDescription="@string/todo"
+            android:focusable="true"
+            app:layout_constraintBottom_toTopOf="@+id/textView27"
+            app:layout_constraintEnd_toEndOf="@+id/view41"
+            app:layout_constraintStart_toStartOf="@+id/view41"
+            app:layout_constraintTop_toTopOf="@+id/view41"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/casual" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/t_nis_casual"
+            app:layout_constraintBottom_toBottomOf="@+id/view41"
+            app:layout_constraintEnd_toEndOf="@+id/view40"
+            app:layout_constraintStart_toStartOf="@+id/view40"
+            app:layout_constraintTop_toTopOf="@+id/view40" />
+
+        <View
+            android:id="@+id/view51"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view41" />
+
+        <View
+            android:id="@+id/view50"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@color/beige"
+            app:layout_constraintBottom_toBottomOf="@+id/view51"
+            app:layout_constraintEnd_toEndOf="@+id/view51"
+            app:layout_constraintStart_toStartOf="@+id/view51" />
+
+        <ImageView
+            android:id="@+id/tenisEsportivo"
+            android:layout_width="111dp"
+            android:layout_height="110dp"
+            android:clickable="true"
+            android:contentDescription="@string/todo"
+            android:focusable="true"
+            app:layout_constraintBottom_toTopOf="@+id/view50"
+            app:layout_constraintEnd_toEndOf="@+id/view51"
+            app:layout_constraintStart_toStartOf="@+id/view51"
+            app:layout_constraintTop_toTopOf="@+id/view51"
+            app:srcCompat="@drawable/esportivo" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/t_nis_esportivo"
+            app:layout_constraintBottom_toBottomOf="@+id/view50"
+            app:layout_constraintEnd_toEndOf="@+id/view50"
+            app:layout_constraintStart_toStartOf="@+id/view50"
+            app:layout_constraintTop_toTopOf="@+id/view50" />
+
+        <View
+            android:id="@+id/view46"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view51" />
+
+        <View
+            android:id="@+id/view49"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@color/beige"
+            app:layout_constraintBottom_toBottomOf="@+id/view46"
+            app:layout_constraintEnd_toEndOf="@+id/view46"
+            app:layout_constraintStart_toStartOf="@+id/view46" />
+
+        <ImageView
+            android:id="@+id/tenisOutrosTipos"
+            android:layout_width="112dp"
+            android:layout_height="111dp"
+            android:clickable="true"
+            android:contentDescription="@string/todo"
+            android:focusable="true"
+            app:layout_constraintBottom_toTopOf="@+id/view49"
+            app:layout_constraintEnd_toEndOf="@+id/view46"
+            app:layout_constraintStart_toStartOf="@+id/view46"
+            app:layout_constraintTop_toTopOf="@+id/view46"
+            app:srcCompat="@drawable/outros" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/outros_tipos"
+            app:layout_constraintBottom_toBottomOf="@+id/view49"
+            app:layout_constraintEnd_toEndOf="@+id/view49"
+            app:layout_constraintStart_toStartOf="@+id/view49"
+            app:layout_constraintTop_toTopOf="@+id/view49" />
+
+        <ImageView
+            android:id="@+id/iconCarrinhoHome"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="24dp"
+            android:clickable="true"
+            android:contentDescription="@string/todo"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="@+id/view32"
+            app:layout_constraintEnd_toStartOf="@+id/iconLoginHome"
+            app:layout_constraintTop_toTopOf="@+id/view32"
+            app:srcCompat="@drawable/car" />
+
+        <ImageView
+            android:id="@+id/iconHomeHome"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="24dp"
+            android:clickable="true"
+            android:contentDescription="@string/todo"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="@+id/view32"
+            app:layout_constraintEnd_toStartOf="@+id/iconCarrinhoHome"
+            app:layout_constraintTop_toTopOf="@+id/view32"
+            app:srcCompat="@drawable/baseline_home_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
