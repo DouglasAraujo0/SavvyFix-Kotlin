@@ -31,7 +31,6 @@ class Cadastro : AppCompatActivity() {
         btnCadastro.setOnClickListener {
             CoroutineScope(Dispatchers.IO).launch {
                 recuperarEndereco()
-                // Navegue para a tela de login após a chamada da API ser concluída
                 runOnUiThread {
                     IrParaLogin()
                 }
