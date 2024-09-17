@@ -25,4 +25,4 @@
 <br>
 
 ## Arquitetura de pastas da solução
-![Estrutura_Mobile](https://github.com/user-attachments/assets/14a144c4-39a5-4854-be42-57013af29cce)
+![Estrutura_Mobile](https://github.com/DouglasAraujo0/SavvyFix-Kotlin/blob/RafaReadme/Estrutura_Mobile.png)
