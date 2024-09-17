@@ -485,7 +485,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/view19"
             app:layout_constraintEnd_toStartOf="@+id/button5"
             app:layout_constraintStart_toEndOf="@+id/imageView31"
-            tools:ignore="SmallSp" />
+            tools:ignore="SmallSp,SpUsage" />
 
         <Button
             android:id="@+id/button5"
