@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1026204323458",
+    "project_id": "savvyfix-kotlin",
+    "storage_bucket": "savvyfix-kotlin.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026204323458:android:d2da65daa500055fc36e9b",
+        "android_client_info": {
+          "package_name": "com.example.savvyfix"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmki87S9QdVMr3yw52bLHWqv0ze2KR1T8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

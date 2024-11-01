@@ -8,68 +8,31 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-
         val iconHomeHome: ImageView = findViewById(R.id.iconHomeHome)
-        val iconCarrinhoHome : ImageView = findViewById(R.id.iconCarrinhoHome)
-        val iconLoginHome : ImageView = findViewById(R.id.iconLoginHome)
+        val iconCarrinhoHome: ImageView = findViewById(R.id.iconCarrinhoHome)
+        val iconLoginHome: ImageView = findViewById(R.id.iconLoginHome)
         val sobreSavvyHome: TextView = findViewById(R.id.sobreSavvyHome)
         val tenisCasual: ImageView = findViewById(R.id.tenisCasual1)
-        val tenisEsportivo : ImageView = findViewById(R.id.tenisEsportivo)
+        val tenisEsportivo: ImageView = findViewById(R.id.tenisEsportivo)
         val tenisOutrosTipos: ImageView = findViewById(R.id.tenisOutrosTipos)
 
-        iconHomeHome.setOnClickListener {
-            IrParaHome()
-        }
-        iconCarrinhoHome.setOnClickListener {
-            IrParaCarrinho()
-        }
-        iconLoginHome.setOnClickListener {
-            IrParaLogin()
-        }
-        sobreSavvyHome.setOnClickListener {
-            IrParaSobreNos()
-        }
-        tenisCasual.setOnClickListener {
-            IrParaCasual()
-        }
-        tenisEsportivo.setOnClickListener {
-            IrParaEsportivo()
-        }
-        tenisOutrosTipos.setOnClickListener {
-            IrParaOutrosTipos()
-        }
+        iconHomeHome.setOnClickListener { irParaActivity(MainActivity::class.java) }
+        iconCarrinhoHome.setOnClickListener { irParaActivity(Carrinho::class.java) }
+        iconLoginHome.setOnClickListener { irParaActivity(Login::class.java) }
+        sobreSavvyHome.setOnClickListener { irParaActivity(Sobre::class.java) }
+        tenisCasual.setOnClickListener { irParaActivity(Casual::class.java) }
+        tenisEsportivo.setOnClickListener { irParaActivity(Esportivo::class.java) }
+        tenisOutrosTipos.setOnClickListener { irParaActivity(OutrosTipos::class.java) }
     }
-    private fun IrParaHome(){
-        val home = Intent(this, MainActivity::class.java)
-        startActivity(home)
-    }
-    private fun IrParaCarrinho(){
-        val carrinho = Intent(this, Carrinho::class.java)
-        startActivity(carrinho)
-    }
-    private fun IrParaLogin(){
-        val login = Intent(this, Login::class.java)
-        startActivity(login)
-    }
-    private fun IrParaSobreNos(){
-        val sobrenos = Intent(this, Sobre::class.java)
-        startActivity(sobrenos)
-    }
-    private fun IrParaCasual(){
-        val casual = Intent(this, Casual::class.java)
-        startActivity(casual)
-    }
-    private fun IrParaEsportivo(){
-        val esportivo = Intent(this, Esportivo::class.java)
-        startActivity(esportivo)
-    }
-    private fun IrParaOutrosTipos(){
-        val outrosTipos = Intent(this, OutrosTipos::class.java)
-        startActivity(outrosTipos)
+
+    private fun irParaActivity(activityClass: Class<*>) {
+        val intent = Intent(this, activityClass)
+        startActivity(intent)
     }
 }
