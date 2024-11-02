@@ -31,7 +31,6 @@ class EditarProdutoActivity : AppCompatActivity() {
 
         firestore = FirebaseFirestore.getInstance() // Inicializa o Firestore
 
-        // Carregar o produto para edição
         val produtoId = intent.getStringExtra("produtoId")
 
         if (produtoId != null) {
